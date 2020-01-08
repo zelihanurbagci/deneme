@@ -1,0 +1,112 @@
+<!DOCTYPE html lang="TR">
+<head>
+
+<title>zeliha nur</title>
+ <meta charset="UTF-8">
+<link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="stage">
+  <div class="logo" ><img src="img/logo.png" width="234" height="104"></div>
+
+	
+<nav>
+    <a href="index.html">Anasayfa</a>
+	<a href="hakımda.html">Hakkımızda</a>
+	<a href="galeri.html">Galerİ</a>
+	<a href="tarif.html">Tarİfler</a>
+	<a href="iletisim.html">İletİşİm</a>
+	<div class="animation start-contact"></div>
+</nav>
+<br>
+  <center>
+ <h1>İletişim</h1>
+
+<div id="temizleme"></div>
+  <div class="height"></div>
+<form action="" method="post">
+
+	<table width="472">
+		<tr>
+			<td width="102">E-Posta</td>
+			<td width="358"><input type="text" name="eposta" style="width: 200px" /></td>
+		</tr>
+		<tr>
+			<td>Ad-Soyad</td>
+			<td><input name="adsoyad" type="text" style="width: 200px" /></td>
+		</tr>
+		<tr>
+			<td>Mesaj</td>
+			<td><textarea name="mesaj" cols="30" rows="5"></textarea></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><button type="button">Gönder</button></td>
+		</tr>
+	</table>
+</form>
+</center>
+  <div class="clear"></div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+<div class="footer">
+  <p>zeliha nur</p>
+</div>
+</div>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.sldr.js"></script>
+<script>
+
+$( window ).load( function() {
+
+	$( '.sldr' ).each( function() {
+		var th = $( this );
+		th.sldr({
+			focalClass    : 'focalPoint',
+			offset        : th.width() / 2,
+			sldrWidth     : 'responsive',
+			nextSlide     : th.nextAll( '.sldr-nav.next:first' ),
+			previousSlide : th.nextAll( '.sldr-nav.prev:first' ),
+			selectors     : th.nextAll( '.selectors:first' ).find( 'li' ),
+			toggle        : th.nextAll( '.captions:first' ).find( 'div' ),
+			sldrInit      : sliderInit,
+			sldrStart     : slideStart,
+			sldrComplete  : slideComplete,
+			sldrLoaded    : sliderLoaded,
+			sldrAuto      : true,
+			sldrTime      : 5000,
+			hasChange     : true
+		});
+	});
+
+});
+
+function sliderInit( args ) {
+
+}
+
+function slideLoaded( args ) {
+
+}
+
+function sliderLoaded( args ) {
+
+}
+
+function slideStart( args ) {
+
+}
+function slideComplete( args ) {
+
+}
+
+</script>
+
+</body>

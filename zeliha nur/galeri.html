@@ -1,0 +1,128 @@
+<!DOCTYPE html lang="TR">
+<head>
+
+<title>zeliha nur</title>
+ <meta charset="UTF-8">
+<link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="stage">
+  <div class="logo" ><img src="img/logo.png" width="234" height="104"></div>
+
+	
+<nav>
+    <a href="index.html">Anasayfa</a>
+	<a href="hakımda.html">Hakkımızda</a>
+	<a href="galeri.html">Galerİ</a>
+	<a href="tarif.html">Tarİfler</a>
+	<a href="iletisim.html">İletİşİm</a>
+	<div class="animation start-blog"></div>
+</nav>
+<br>
+  <center>
+  <h1>Galeri</h1>
+  <ul class="hoverbox">
+<li>
+<a href="#"><img src="img/indir.jpg" alt="description" /><img src="img/indir.jpg" alt="description" class="preview" /></a>
+</li>
+<li>
+<a href="#"><img src="img/çorba.jpg" alt="description" /><img src="img/çorba.jpg" alt="description" class="preview" /></a>
+</li>
+<li>
+<a href="#"><img src="img/perdetatlısı.jpg" alt="description" /><img src="img/perdetatlısı.jpg" alt="description" class="preview" /></a>
+</li>
+<li>
+<a href="#"><img src="img/wrap.jpg" alt="description" /><img src="img/wrap.jpg" alt="description" class="preview" /></a>
+</li>
+<li>
+<a href="#"><img src="img/1.jpg" alt="description" /><img src="img/1.jpg" alt="description" class="preview" /></a>
+</li>
+<li>
+<a href="#"><img src="img/firinda-kasarli-karnabahar-tarifi.jpg" alt="description" /><img src="img/firinda-kasarli-karnabahar-tarifi.jpg" alt="description" class="preview" /></a>
+</li>
+<li>
+<a href="#"><img src="img/2.jpg" alt="description" /><img src="img/2.jpg" alt="description" class="preview" /></a>
+</li>
+<li>
+<a href="#"><img src="img/photo1.jpg" alt="description" /><img src="img/photo1.jpg" alt="description" class="preview" /></a>
+</li>
+<li>
+<a href="#"><img src="img/photo2.jpg" alt="description" /><img src="img/photo2.jpg" alt="description" class="preview" /></a>
+</li>
+<li>
+<a href="#"><img src="img/images.jpg" alt="description" /><img src="img/images.jpg" alt="description" class="preview" /></a>
+</li>
+<li>
+<a href="#"><img src="img/tatlı.jpg" alt="description" /><img src="img/tatlı.jpg" alt="description" class="preview" /></a>
+</li>
+<li>
+<a href="#"><img src="img/tt.jpg" alt="description" /><img src="img/tt.jpg" alt="description" class="preview" /></a>
+</li>
+
+</ul>
+  
+  <div class="clear"></div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+<div class="footer">
+  <p>zeliha nur</p>
+</div>
+</div>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.sldr.js"></script>
+<script>
+
+$( window ).load( function() {
+
+	$( '.sldr' ).each( function() {
+		var th = $( this );
+		th.sldr({
+			focalClass    : 'focalPoint',
+			offset        : th.width() / 2,
+			sldrWidth     : 'responsive',
+			nextSlide     : th.nextAll( '.sldr-nav.next:first' ),
+			previousSlide : th.nextAll( '.sldr-nav.prev:first' ),
+			selectors     : th.nextAll( '.selectors:first' ).find( 'li' ),
+			toggle        : th.nextAll( '.captions:first' ).find( 'div' ),
+			sldrInit      : sliderInit,
+			sldrStart     : slideStart,
+			sldrComplete  : slideComplete,
+			sldrLoaded    : sliderLoaded,
+			sldrAuto      : true,
+			sldrTime      : 5000,
+			hasChange     : true
+		});
+	});
+
+});
+
+function sliderInit( args ) {
+
+}
+
+function slideLoaded( args ) {
+
+}
+
+function sliderLoaded( args ) {
+
+}
+
+function slideStart( args ) {
+
+}
+function slideComplete( args ) {
+
+}
+
+</script>
+
+</body>

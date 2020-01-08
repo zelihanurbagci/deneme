@@ -1,0 +1,113 @@
+<!DOCTYPE html lang="TR">
+<head>
+
+<title>zeliha nur</title>
+ <meta charset="UTF-8">
+
+<link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="stage">
+  <div class="logo" ><img src="img/logo.png" width="234" height="104"></div>
+
+	
+<nav>
+	<a href="index.html">Anasayfa</a>
+	<a href="hakımda.html">Hakkımızda</a>
+	<a href="galeri.html">Galerİ</a>
+	<a href="tarif.html">Tarİfler</a>
+	<a href="iletisim.html">İletİşİm</a>
+	<div class="animation start-home"></div>
+</nav>
+<br><br>
+  <div id="SLDR-ONE" class="sldr">
+		<ul class="wrp animate">
+			<li class="elmnt-one"><div class="skew"><div class="wrap"><img src="img/1.jpg" width="1000" height="563"></div></div></li>
+			<li class="elmnt-two"><div class="skew"><div class="wrap"><img src="img/2.jpg" width="1000" height="563"></div></div></li>
+			<li class="elmnt-three"><div class="skew"><div class="wrap"><img src="img/3.jpg" width="1000" height="563"></div></div></li>
+			<li class="elmnt-four"><div class="skew"><div class="wrap"><img src="img/4.jpg" width="1000" height="563"></div></div></li>
+		</ul>
+	</div>
+
+	<div class="clear"></div>
+
+	<div class="captions">
+	 <div class="focalPoint"><p><small>1</small></p></div>
+	 <div><p><small>2</small></p></div>
+	 <div><p><small>3</small></p></div>
+	 <div><p><small>4</small></p></div>
+	</div>
+
+	<ul class="selectors">
+		<li class="focalPoint"><a href="">•</a></li><li><a href="">•</a></li><li><a href="">•</a></li><li><a href="">•</a></li>
+	</ul>
+
+	<button class="sldr-prv sldr-nav prev">Geri</button>
+	<button class="sldr-nxt sldr-nav next">İleri</button>
+
+
+  <div class="clear"></div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+<div class="footer">
+  <p>zeliha nur</p>
+</div>
+</div>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.sldr.js"></script>
+<script>
+
+$( window ).load( function() {
+
+	$( '.sldr' ).each( function() {
+		var th = $( this );
+		th.sldr({
+			focalClass    : 'focalPoint',
+			offset        : th.width() / 2,
+			sldrWidth     : 'responsive',
+			nextSlide     : th.nextAll( '.sldr-nav.next:first' ),
+			previousSlide : th.nextAll( '.sldr-nav.prev:first' ),
+			selectors     : th.nextAll( '.selectors:first' ).find( 'li' ),
+			toggle        : th.nextAll( '.captions:first' ).find( 'div' ),
+			sldrInit      : sliderInit,
+			sldrStart     : slideStart,
+			sldrComplete  : slideComplete,
+			sldrLoaded    : sliderLoaded,
+			sldrAuto      : true,
+			sldrTime      : 5000,
+			hasChange     : true
+		});
+	});
+
+});
+
+function sliderInit( args ) {
+
+}
+
+function slideLoaded( args ) {
+
+}
+
+function sliderLoaded( args ) {
+
+}
+
+function slideStart( args ) {
+
+}
+function slideComplete( args ) {
+
+}
+
+</script>
+
+</body>

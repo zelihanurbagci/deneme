@@ -1,0 +1,102 @@
+<!DOCTYPE html lang="TR">
+<head>
+
+<title>zeliha nur</title>
+ <meta charset="UTF-8">
+<link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="stage">
+  <div class="logo" ><img src="img/logo.png" width="234" height="104"></div>
+
+	
+<nav>
+    <a href="index.html">Anasayfa</a>
+	<a href="hakımda.html">Hakkımızda</a>
+	<a href="galeri.html">Galerİ</a>
+	<a href="tarif.html">Tarİfler</a>
+	<a href="iletisim.html">İletİşİm</a>
+	<div class="animation start-about"></div>
+</nav>
+<br>
+  <center>
+  <h1>Hakımda</h1>
+  <p>
+	Zeliha Nur, sevgilisini mutlu etmek için İtalyan mutfağını öğrenenin de, işi gücü bırakıp güneyde şarap üretmeyi, en olmadı Cihangir'de pilavcı açmayı hayal edenin de, övünerek anlatabildiği tek mutfak becerisi menemen olanın da, yurt dışına her çıkışında yemek yiyeceği yerlere göre otelini seçenin de, o gün yediği dev bir sufle için bütün hafta boyunca yediklerine dikkat etme zorunluluğu hissedenin de, yemeğin tadına bakmadan tuz atanın da, Instagram'a fotoğraf atabilmek için yemeğini soğutmayı göze alanın da sitesi.
+
+	Sadece karnını doyurmak isteyenler için değil, bir hazzın peşinde koşanlar için.
+	
+	Farklı zevklerden ve renklerden gelen iştahlı ekibi ve dışarıdan katkı sağlayan birçok dostu ve partneri ile Yemek.com kocaman, upuzun, rengarenk bir masa kurdu ve bu masada epey sandalye var.
+	
+	Bu nefis masada sizin de bir sandalyeniz var. İster yazar olarak, ister okur olarak.
+	
+	İyi ki geldiniz, yine gelin.
+	
+	Sevgiler bizden,</p>
+  <p>&nbsp;</p>
+  
+  <div class="clear"></div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+<div class="footer">
+  <p>zeliha nur</p>
+</div>
+</div>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.sldr.js"></script>
+<script>
+
+$( window ).load( function() {
+
+	$( '.sldr' ).each( function() {
+		var th = $( this );
+		th.sldr({
+			focalClass    : 'focalPoint',
+			offset        : th.width() / 2,
+			sldrWidth     : 'responsive',
+			nextSlide     : th.nextAll( '.sldr-nav.next:first' ),
+			previousSlide : th.nextAll( '.sldr-nav.prev:first' ),
+			selectors     : th.nextAll( '.selectors:first' ).find( 'li' ),
+			toggle        : th.nextAll( '.captions:first' ).find( 'div' ),
+			sldrInit      : sliderInit,
+			sldrStart     : slideStart,
+			sldrComplete  : slideComplete,
+			sldrLoaded    : sliderLoaded,
+			sldrAuto      : true,
+			sldrTime      : 5000,
+			hasChange     : true
+		});
+	});
+
+});
+
+function sliderInit( args ) {
+
+}
+
+function slideLoaded( args ) {
+
+}
+
+function sliderLoaded( args ) {
+
+}
+
+function slideStart( args ) {
+
+}
+function slideComplete( args ) {
+
+}
+
+</script>
+
+</body>
